@@ -1,4 +1,9 @@
 /EE40221 - Introduction to Simulink Environment.pdf
-/Tutorial 1
-/Tutorial 2
-/Tutorial 3
+**/.DS_Store
+**/settings.json
+**/slprj
+**/*ert_rtw
+*/.bin
+*/.elf
+*/.autosave
+*/.slxc
