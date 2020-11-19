@@ -7,6 +7,7 @@
 AngleReached = 0 #Field 4 MQTT
 TargetReached = 0 #Field 5 MQTT
 CommandCount = 0
+ArucoCodeNBR = 0
 
 ## MQTT Fields - BOBAmosFET
 # Field 1: Angle
@@ -20,13 +21,20 @@ CommandCount = 0
 
 # Initialise all functions neededef
 
-def scanArea ()
-
+def InitialScan ()
+    
     # return all ArucoCode Locations and BB8 Location
-    return array(X,Y), BB8position
+    # return first arucoCode needed angle and distance 
+    # (Keep track of ArucoCodeNBR)
+    return 
 
-def RouteCalculator ()
+def CheckBB8 (Function)
+    # return PositionCheck (Function: angle or distance to check)
+    # return calculated Angle and distance 
 
+    return inPosition, Angle, Distance 
+    # inPOsition= 1 - meaning its in position
+    # inPosition= 0 - meaning its not in position
 
 ################################  START  ################################
  
@@ -57,7 +65,7 @@ except:
 
 BB8_X = scanArea
 BB8_Y = scanArea
-ArucoCodeList = scanArea() 
+ArucoCodeList = scanArea() # List of all arucoCOde in an order of closest to furthest
 
 n = index (ArucoCodeList)
 
